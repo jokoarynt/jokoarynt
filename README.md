@@ -1,3 +1,3 @@
-## Hi there 👋
+<div align="center">## Hi there 👋
 
-[![My GitFut card](https://gitfut.com/jokoarynt.png)](https://gitfut.com/jokoarynt)
+<a href="https://gitfut.com/jokoarynt"><img src="https://gitfut.com/jokoarynt.png" width="240" alt="GitFut card"></a></div>
