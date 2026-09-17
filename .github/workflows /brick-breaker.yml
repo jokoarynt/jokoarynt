@@ -1,0 +1,53 @@
+name: Generate Brick Breaker
+
+on:
+  schedule:
+    # Runs automatically every hour to sync new commits
+    - cron: "0 * * * *"
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: MakdumIbrohim/generate-brick-breaker@main
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          github_user: ${{ github.repository_owner }}
+
+          # Options: game.svg (recommended) or game.gif
+          output_path: game.svg
+
+          # Options: classic | fire | ice | lightning | poison
+          ball_skin: lightning
+
+          # Options: classic | sky | sky-night | synthwave | matrix | sakura
+          theme: classic
+
+          # Options: classic | laser | retro | mecha | cyber
+          paddle_skin: laser
+
+          # Optional: Custom brick color (applies to classic theme only).
+          # - Single HEX (auto-gradient): '#00b4d8'
+          # - Combined Multi-HEX (levels 1-4): '#FFADAD,#FFD6A5,#FDFFB6,#9BF6FF'
+          brick_color: '#FFADAD,#FFD6A5,#FDFFB6,#9BF6FF'
+
+          # Optional: Custom ball speed: slow | normal | fast | turbo or number (e.g. '14.0').
+          # If omitted, speed adapts automatically based on your total commit count.
+          ball_speed: normal
+
+      - name: Commit and Push
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add -A
+          git diff --staged --quiet || git commit -m "chore: update brick breaker assets"
+          git pull --rebase --autostash origin main || true
+          git push origin main
