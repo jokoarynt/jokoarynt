@@ -26,21 +26,22 @@ jobs:
           output_path: game.svg
 
           # Options: classic | fire | ice | lightning | poison
-          ball_skin: classic
+          ball_skin: lightning
 
           # Options: classic | sky | sky-night | synthwave | matrix | sakura
           theme: classic
 
           # Options: classic | laser | retro | mecha | cyber
-          paddle_skin: classic
+          paddle_skin: laser
 
           # Optional: Custom brick color (applies to classic theme only).
           # - Single HEX (auto-gradient): '#00b4d8'
           # - Combined Multi-HEX (levels 1-4): '#FFADAD,#FFD6A5,#FDFFB6,#9BF6FF'
-          # brick_color: '#00b4d8'
+          brick_color: '#FFADAD,#FFD6A5,#FDFFB6,#9BF6FF'
 
-          # Optional: Custom ball speed: slow | normal | fast | turbo or number (e.g. '6.5', default: normal).
-          # ball_speed: normal
+          # Optional: Custom ball speed: slow | normal | fast | turbo or number (e.g. '14.0').
+          # If omitted, speed adapts automatically based on your total commit count.
+          ball_speed: normal
 
       - name: Commit and Push
         run: |
