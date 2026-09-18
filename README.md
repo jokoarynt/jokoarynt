@@ -8,7 +8,7 @@
 
 <p align="center">
   <a href="https://gitfut.com/jokoarynt">
-    <img src="https://gitfut.com/jokoarynt.png" width="150" alt="GitFut card">
+    <img src="https://gitfut.com/jokoarynt.png?country=id" width="150" alt="GitFut card">
   </a>
 </p>
 
@@ -17,7 +17,7 @@
 </p>
 
 <p align="center">
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=jokoarynt&theme=dark&hide_border=true"/>
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=jokoarynt&theme=dark&hide_border=true" alt="GitHub Streak"/>
 </p>
 
 <p align="center">
