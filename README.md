@@ -7,7 +7,7 @@
 </p>
 
 <p align="center">
-  <a href="https://gitfut.com/jokoarynt">
+  <a href="https://gitfut.com/jokoarynt?country=id">
     <img src="https://gitfut.com/jokoarynt.png?country=id" width="150" alt="GitFut card">
   </a>
 </p>
