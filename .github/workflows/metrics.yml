@@ -54,8 +54,7 @@ jobs:
           plugin_languages_sections: most-used
           plugin_languages_indepth: yes
           plugin_languages_details: lines, percentage
-          plugin_languages_analysis_timeout: 30
-          plugin_languages_analysis_timeout_repositories: 100
+          plugin_languages_analysis_timeout: 60
           plugin_languages_categories: markup, programming
           plugin_languages_colors: github
           plugin_languages_limit: 8
