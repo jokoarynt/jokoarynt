@@ -29,5 +29,9 @@
 </p>
 
 <p align="center">
+  <img src="https://quotes-github-readme.vercel.app/api?quoteColor=B2BEB5&authorColor=2f81f7&backgroundColor=000&symbolColor=B2BEB5&type=horizontal&border=false"/>
+</p>
+
+<p align="center">
   <img src="https://capsule-render.vercel.app/api?type=waving&color=B2BEB5&height=90&section=footer"/>
 </p>
